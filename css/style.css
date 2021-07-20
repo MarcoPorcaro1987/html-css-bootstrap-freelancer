@@ -8,6 +8,10 @@ h2 {
     padding-top: 40px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 /*Header*/
 
 header {
@@ -15,17 +19,21 @@ header {
     z-index: 99;
 }
 
+header .col-1{
+    display: none;
+    text-align: right;
+}
 /*Main*/
 
 main {
     
-    padding-top: 62px;
+    padding-top: 72px;
 }
 
 /*Hero*/
 
 .hero {
-    padding-top: 50px;
+    padding: 100px 0;
     background-color: #1abc9c;
 }
 
@@ -43,6 +51,7 @@ h1 {
 
 .portfolio {
     background-color: white;
+    padding-top: 50px;
 }
 
 .portfolio h2 {
@@ -61,7 +70,8 @@ h1 {
 /*About*/
 
 .about {
-    background-color: #1abc9c;;
+    background-color: #1abc9c;
+    padding-top: 50px;
 }
 
 .about-cont {
@@ -83,6 +93,7 @@ h1 {
 
 .contact-me{
     color: #2c3e50;
+    padding-top: 50px;
 }
 
 .contact-cont {
@@ -120,4 +131,17 @@ h1 {
 
 .foot-bottom-text {
     font-size: 0.625rem;
+}
+
+/*Responsive*/
+
+@media screen and (min-width:575px){
+    .hamburger{
+        display: none;
+    }
+
+    header .col-1{
+        display: block;
+    }
+    
 }
