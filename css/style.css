@@ -1,0 +1,26 @@
+body {
+    color: white;
+}
+
+header {
+    background-color: #2c3e50;
+}
+
+main {
+    background-color: #1abc9c;
+    padding-top: 62px;
+}
+
+.rounded-circle {
+    height: 150px;
+    width: 150px;
+    background-color: #2c3e50;
+}
+
+.hero {
+    padding-top: 50px;
+}
+
+h1 {
+    padding-top: 20px;
+}
