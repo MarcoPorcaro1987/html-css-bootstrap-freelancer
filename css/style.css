@@ -17,7 +17,7 @@ header {
 /*Main*/
 
 main {
-    background-color: #1abc9c;
+    
     padding-top: 62px;
 }
 
@@ -25,6 +25,7 @@ main {
 
 .hero {
     padding-top: 50px;
+    background-color: #1abc9c;
 }
 
 .rounded-circle {
@@ -54,4 +55,23 @@ h1 {
 .card-img-top {
     width: 100%;
     border-radius: 10px;
+}
+
+/*About*/
+
+.about {
+    background-color: #1abc9c;;
+}
+
+.about-cont {
+    width: 80%;
+}
+
+.btn-download {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.about-row {
+    padding-bottom: 30px;
 }
