@@ -19,7 +19,7 @@ header {
     z-index: 99;
 }
 
-header .col-1{
+header .col-sm-2{
     display: none;
     text-align: right;
 }
@@ -140,7 +140,7 @@ h1 {
         display: none;
     }
 
-    header .col-1{
+    header .col-sm-2{
         display: block;
     }
     
