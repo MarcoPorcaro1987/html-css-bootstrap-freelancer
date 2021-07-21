@@ -5,6 +5,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.c-prime {
+    color: #2c3e50;
+}
+
+.c-white {
+    color: white;
+}
+
 .bg-prime {
     background-color: #2c3e50;
 }
@@ -17,10 +25,16 @@ body {
     background-color: #1abc9c;
 }
 
+h1, h2, .navbar-brand {
+    font-weight: bold;
+}
 h2 {
     padding: 30px 0;
 }
 
+.portfolio h2, .about h2 {
+    color: #333333;
+}
 a {
     text-decoration: none;
     color: white;
@@ -39,6 +53,24 @@ section {
     margin: 20px 0;
     color: white;
 }
+
+.star-cont {
+    margin-bottom: 20px;
+}
+
+.fa-star {
+    font-size: 40px;
+    margin: 0 20px;
+ 
+}
+
+.hr-star {
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
 
 
 /*Header*/
@@ -82,11 +114,14 @@ h1 {
     width: 20%;
     min-width: 259px;
 }
+
+
 /*Portfolio*/
 
-.portfolio h2 {
-    color:#2c3e50;
+.portfolio .hr-star {
+    background-color: #2c3e50;
 }
+
 
 .card {
     border: none;
