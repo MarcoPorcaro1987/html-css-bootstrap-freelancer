@@ -32,7 +32,7 @@ h2 {
     padding: 30px 0;
 }
 
-.portfolio h2, .about h2 {
+.portfolio h2, .contact-me h2 {
     color: #333333;
 }
 a {
@@ -71,7 +71,17 @@ section {
     border-radius: 5px;
 }
 
+.portfolio .hr-star, .contact-me .hr-star {
+    background-color: #2c3e50;
+}
 
+.form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: 15px 12px;
+}
 
 /*Header*/
 
@@ -118,9 +128,6 @@ h1 {
 
 /*Portfolio*/
 
-.portfolio .hr-star {
-    background-color: #2c3e50;
-}
 
 
 .card {
@@ -142,12 +149,12 @@ h1 {
 .about-col {
     padding-bottom: 30px;
 }
-
+.fa-download {
+    margin-right: 5px;
+}
 /*Contact-me*/
 
-.contact-me{
-    color: #2c3e50;
-}
+
 
 .contact-col {
     padding-bottom: 5px;
