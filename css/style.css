@@ -134,16 +134,25 @@ h1 {
 
 /*Portfolio*/
 
-
-
-.card {
-    border: none;
+.card-cont {
+    position: relative;
 }
 
-.card-img-top {
+.img-card {
     width: 100%;
-    border-radius: 10px;
-    margin:12px 0;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.fa-plus {
+    color:white;
+    cursor: pointer;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    display: none;
 }
 
 /*About*/
@@ -190,4 +199,15 @@ h1 {
 /*Foot-Bottom*/
 
 
+
+/*Hover*/
+
+.card-cont:hover .fa-plus{
+    display: block;
+}
+
+.img-card:hover {
+    background-color: black;
+    opacity: 0.8;
+}
 
