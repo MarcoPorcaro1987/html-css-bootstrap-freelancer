@@ -2,6 +2,7 @@
 
 body {
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bg-prime {
@@ -34,10 +35,9 @@ section {
     max-width: 1100px;
 }
 
-.btns {
-    padding: 5px;
+.btn {
     margin: 20px 0;
-    border-radius: 10px;
+    color: white;
 }
 
 
@@ -47,10 +47,25 @@ header {
     z-index: 99;
 }
 
-header .col-sm-2{
-    display: none;
-    text-align: right;
+.navbar-light .navbar-brand {
+    color: white;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+
+.fa-bars {
+    display: inline-block;
+    vertical-align: middle;
+    color: #8888;
+}
+
 /*Main*/
 
 main {
@@ -59,16 +74,14 @@ main {
 
 /*Hero*/
 
-
-.rounded-circle {
-    height: 150px;
-    width: 150px;
-}
-
 h1 {
     padding-top: 20px;
 }
 
+.img-hero {
+    width: 20%;
+    min-width: 259px;
+}
 /*Portfolio*/
 
 .portfolio h2 {
@@ -106,10 +119,6 @@ h1 {
     border-bottom: 1px solid #cccccc;
 }
 
-.btn-send {
-    color: white;
-}
-
 /*Footer*/
 
 /*Foot-Top*/
@@ -122,15 +131,3 @@ h1 {
 
 
 
-/*Responsive*/
-
-@media screen and (min-width:575px){
-    .hamburger{
-        display: none;
-    }
-
-    header .col-sm-2{
-        display: block;
-    }
-    
-}

@@ -7,27 +7,49 @@
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- /Bootstrap CSS-->
+    <!-- Google-Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- /Google-Font Montserrat -->
+    <!-- Fonte Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonte Awesome-->
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap Freelancer</title>
 </head>
 <body>
     <header class="position-fixed top-0 w-100 py-4 bg-prime">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-9 col-sm-6 col-lg-9">
-                    <a href="#start" >START BOOTSTRAP</a>
-                </div>
-                <div class="col-3 text-end hamburger">
-                    <a href="#">hamburger</a>
-                </div>    
-                <div class="col-sm-2 col-lg-1">
-                    <a href="#portfolio">PORTFOLIO</a>
-                </div>
-                <div class="col-sm-2 col-lg-1">
-                    <a href="#about">ABOUT</a>
-                </div>
-                <div class="col-sm-2 col-lg-1">
-                    <a href="#contact">CONTACT</a>
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#start">START BOOTSTRAP</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                          <ul class="navbar-nav ">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">CONTACT</a>
+                              </li>
+                            <li class="nav-item dropdown">
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
                 </div>
             </div>
         </div>
@@ -37,7 +59,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col d-flex flex-column align-items-center text-center">
-                        <div class="rounded-circle bg-prime"></div>
+                        <img class="img-hero" src="img/avatar.svg" alt="Avatar">
                         <h1>START BOOTSTRAP</h1>
                         <p>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
                     </div>
@@ -94,7 +116,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <div class="btn-download btns">Download</div>
+                        <div class="btn-download btn">Download</div>
                     </div>
                 </div>
             </div>
@@ -110,7 +132,7 @@
                         <div class="contact-col col-12">Message</div>
                     </div>
                     <div class="d-flex">
-                        <div class="btn-send btns bg-second">Send</div>
+                        <div class="btn-send btn bg-second">Send</div>
                     </div>
                 </div>
             </div>
