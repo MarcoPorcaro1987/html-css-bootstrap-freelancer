@@ -5,7 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.c-prime, {
+.c-prime {
     color: #2c3e50;
 }
 
@@ -28,6 +28,7 @@ body {
 h1, h2, .navbar-brand {
     font-weight: bold;
 }
+
 h2 {
     padding: 30px 0;
 }
@@ -35,6 +36,7 @@ h2 {
 .portfolio h2, .contact-me h2 {
     color: #333333;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -58,60 +60,31 @@ section {
     margin-bottom: 20px;
 }
 
-.fa-star {
-    font-size: 40px;
-    margin: 0 20px;
- 
-}
-
-.hr-star {
+.star-cont::before, .star-cont::after {
+    content: "";
     width: 100px;
     height: 4px;
-    background-color: white;
+    background-color: currentColor;
     border-radius: 5px;
 }
 
-.portfolio .hr-star, .contact-me .hr-star {
-    background-color: #2c3e50;
+.fa-star {
+    font-size: 40px;
+    margin: 0 20px;
 }
 
-.portfolio .fa-star, .contact-me .fa-star {
-    color: #2c3e50;
-}
-.form-control {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
-    padding: 15px 12px;
-}
-::placeholder {
-    color: #2c3e50;
-    opacity: 1;
-}
 /*Header*/
 
 header {
     z-index: 99;
 }
 
-.navbar-light .navbar-brand {
+.navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: white;
-}
-
-
-.navbar-light .navbar-toggler {
+.navbar-dark .navbar-toggler {
     border-color: white;
-}
-
-.fa-bars {
-    display: inline-block;
-    vertical-align: middle;
-    color: #8888;
 }
 
 /*Main*/
@@ -131,27 +104,32 @@ h1 {
     min-width: 259px;
 }
 
-
 /*Portfolio*/
 
 .card-cont {
     position: relative;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    overflow: hidden;
 }
 
 .img-card {
     width: 100%;
     border-radius: 20px;
-    margin-bottom: 24px;
+    cursor: pointer;    
 }
 
 .fa-plus {
     color:white;
-    cursor: pointer;
     position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);
+    left:0;
+    top:0;
+    right:0; 
+    bottom:0;
     font-size: 50px;
+    background-color: rgba(26, 188, 156, 0.9);
+    justify-content: center;
+    align-items: center;
     display: none;
 }
 
@@ -164,12 +142,25 @@ h1 {
 .about-col {
     padding-bottom: 30px;
 }
+
 .fa-download {
     margin-right: 5px;
 }
+
+.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ced4da;
+    padding: 15px 12px;
+    padding-left: 0px;
+}
+
+.form-control::placeholder {
+    padding-left: 0px;
+    color: #2c3e50;
+}
+
 /*Contact-me*/
-
-
 
 .contact-col {
     padding-bottom: 5px;
@@ -194,20 +185,14 @@ h1 {
 }
 
 .foot-top a {
-    color: #1abc9c;
+    color: rgb(26, 188, 156);
 }
+
 /*Foot-Bottom*/
-
-
 
 /*Hover*/
 
 .card-cont:hover .fa-plus{
-    display: block;
-}
-
-.img-card:hover {
-    background-color: black;
-    opacity: 0.8;
+    display: flex;
 }
 
